@@ -1,0 +1,49 @@
+Prompting Techniques
+• Prompt chaining
+• Chain of thought
+• Tree of thought
+• Framework for creating agents
+
+Prompting is the process of providing specific instructions to a
+generative AI tool to receive new information or to achieve a
+desired outcome on a task.
+
+Some examples:
+• Text
+• Images
+• Videos
+• Sound
+• Code
+
+5 Step Framework
+Task: what you want the AI to do.
+
+Prompt examples:
+Suggest a birthday gift for my friend who enjoys reading.
+
+These prompts can be elevated so that we get a result back that
+is more unique and specific by:
+1. Including a persona which is a role that you want the AI to
+   embody.
+
+   Act as a librarian and book recommendation expert.
+   Suggest a birthday gift for my friend who enjoys reading.
+
+   This should make the results be more specific.
+2. Including the format of the output will make the results more
+   structured.
+
+   Act as a librarian and book recommendation expert.
+   Suggest a birthday gift for my friend who enjoys reading.
+
+   Format your response using the following sections:
+
+   1. Gift Idea
+   2. Why It Is a Good Choice
+   3. Estimated Cost
+   4. Personalisation Ideas
+
+Context
+References
+Evaluate
+Iterate
