@@ -1,0 +1,55 @@
+If we're going tp build our own AI model from scrath,
+we first need to learn some of the math that helps
+an AI make decisions.
+
+In algebra, we write:
+score = x
+
+The letter x is just a placeholder for a number.
+
+Equation:
+2x + 3 = 11
+
+Question:
+What value of x makes this equation true?
+
+2x = 11 - 3
+2x = 8
+x = 4
+
+Multiplication with variables shows up everywhere in artificial
+intelligence.
+
+3x
+
+The above simply means "Three times x.".
+
+Coordinates
+
+If we have:
+x = 2
+y = 5
+
+we can plot the point (2, 5) on a graph.
+
+AI often thinks of data as points in space.
+
+Vectors
+
+Instead of one number, we can have several:
+[2, 5, 1]
+
+This is called a vector.
+
+A vector is just a list of numbers.
+
+Matrices
+
+A matrix is simply a table of numbers.
+
+[
+    [1, 2],
+    [3, 4]
+]
+
+If a vector is one row of numbers, a matrix is lots of rows.
