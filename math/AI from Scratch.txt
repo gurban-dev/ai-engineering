@@ -2,17 +2,15 @@ If we're going tp build our own AI model from scrath,
 we first need to learn some of the math that helps
 an AI make decisions.
 
-In algebra, we write:
-score = x
-
-The letter x is just a placeholder for a number.
-
-Equation:
+In algebra, we could have the following equation:
 2x + 3 = 11
+
+The letter 'x' is just a placeholder for a number.
 
 Question:
 What value of x makes this equation true?
 
+2x + 3 = 11
 2x = 11 - 3
 2x = 8
 x = 4
@@ -26,11 +24,30 @@ The above simply means "Three times x.".
 
 Coordinates
 
+(0, 0) is called the origin. It is the point where the x-axis and y-axis meet.
+
+In computer graphics systems, such as games and images, (0, 0) is instead
+placed in the top-left corner of the screen.
+
 If we have:
 x = 2
 y = 5
 
 we can plot the point (2, 5) on a graph.
+
+The first number, 2 tells us how far to move along the x-axis.
+
+Positive values move to the right.
+
+Negative values move to the left.
+
+The second number, 5 tells us how far to move along the y-axis.
+
+Positive values move up.
+
+Negative values move down.
+
+Coordinates are how computers represent locations.
 
 AI often thinks of data as points in space.
 
