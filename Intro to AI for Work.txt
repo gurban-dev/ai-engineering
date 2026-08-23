@@ -1,0 +1,78 @@
+Imagine a student collecting information from several school documents,
+such as event notices or project instructions. Each document may organise
+details differently, so the old way would be to open each document one
+by one, find items like dates, names, locations, and costs and copy
+everything into a table by hand. That takes time and makes copy-and-paste
+mistakes more likely.
+
+With AI, the same task could become a simple workflow:
+• Upload suitable documents and explain the goal.
+• Ask AI to extract specific details, such as dates, names, locations
+  and costs.
+• Have AI organise the details into a clear table.
+• Check the table against the original documents for accuracy.
+
+This can reduce repetitive copying and leave more time for understanding
+the information. Use only documents for your school or family allows
+you to upload, and never share private information without permission.
+
+This is just one example of how AI can help. The objective is to use
+AI to save time, increase productivity and protect privacy.
+
+When you think about AI, think about tasks that normally require human
+thinking, such as understanding speech, recognising a face, or choosing
+a fast route.
+
+Artificial intelligence is technology that allows computers to perform
+tasks that normally require human intelligence.
+
+AI does not automatically replace every developer or guarantee perfect
+results; humans still define goals, check quality use it responsibly.
+
+AI is already part of everyday life, even may seem new because of ChatGPT.
+
+When it comes to Netflix recommendations, Netflix suggests movies and
+shows you may enjoy, helping you avoid scrolling through thousands of choices.
+These recommendations account for about 80% of Netflix viewing, demonstrating
+how useful AI can be for finding content quickly.
+
+Google Maps has arrival-time predictions. This estimates how long a trip
+will take and updates that estimate as conditions will change. This helps
+people plan when to leave and share a more realistic arrival time.
+
+Billions of people rely on these predictions every day for commutes,
+appointments and travel. AI is not only a recent chatbot trendl it has
+been quietly helping people for years.
+
+1. What is artifical intelligence?
+a. Computer systems that perform tasks typically associated with human
+   intelligence, such as learning, reasoning and decision-making
+
+b. Software that mimics human conversation like ChatGPT
+
+c. Robots that can move and interact with the physical world
+
+d. Any advanced computer program that processes large amounts of data
+
+2. Which of the following statements about AI is true?
+a. AI is a brand new technology that emerged in the last couple of years
+
+b. AI only exists in research labs and isn't used in everyday life yet
+
+c. AI has been around for many years but it hasn't been used in everyday life
+   yet
+
+d. AI has been around for many years and is already integrated into many
+   systems we use daily 
+
+Correct answers:
+1. a. AI is a brand new technology that emerged in the last couple of years
+2. d. AI has been around for many years and is already integrated into many
+      systems we use daily 
+
+Before modern AI, engineers often created expert systems by programming
+explicit, step-by-step rules for each situation.
+
+A refrigerator is a example of this. A thermostat checks the temperature,
+turns the cooling on when it is too warm, and turns it off once the target
+temperature is reached.
