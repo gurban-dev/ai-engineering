@@ -1,0 +1,48 @@
+Try to answer each question without notes first, then explain your
+reasoning in one or two sentences per item.
+
+1. Define artificial intelligence in your own words.
+
+   Artificial intelligence is technology that enables computers to
+   perform tasks associated with human intelligence, such as
+   understanding language, recognizing images, learning, and making
+   decisions.
+
+2. Give one everyday AI example other than Netflix or Google Maps,
+   and describe its benefit.
+
+   Spam detection is an everyday AI example. It identifies unwanted
+   or dangerous emails and moves them out of the inbox, helping
+   protect people from clutter and phishing attempts.
+
+3. Explain why a refrigerator can use fixed rules, but movie
+   recommendations cannot rely on a complete rulebook.
+
+   A refrigerator follows fixed rules because temperature control is
+   predictable. Movie recommendations are harder because preferences
+   are subjective, change over time, and depend on many interacting
+   factors.
+
+4. Describe the difference between training and operation in machine
+   learning.
+
+   During training, a machine-learning system studies many examples
+   and learns patterns. During operation, it applies those patterns
+   to a new case to produce a result.
+
+5. A model sees thousands of labeled scans. What does it learn, and why
+   is it not simply memorizing every scan?
+
+   The model learns patterns in scans associated with cancer likelihood.
+   It is not simply memorizing because its purpose is to recognize
+   relevant patterns in new scans, not reproduce the exact training scans.
+
+6. Explain why human experts remain important when AI makes predictions.
+
+   Human experts remain important because AI can make errors, miss context,
+   or reflect problems in its data. Experts set goals, check results, and
+   make responsible decisions.
+
+Key idea:
+Machine learning learns patterns from examples rather than following a
+complete rulebook.

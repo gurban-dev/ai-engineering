@@ -1,0 +1,18 @@
+Try to answer each question without notes first, then explain your reasoning
+in one or two sentences per item.
+
+1. Define artificial intelligence in your own words.
+
+2. Give one everyday AI example other than Netflix or Google Maps,
+   and describe its benefit.
+
+3. Explain why a refrigerator can use fixed rules, but movie
+   recommendations cannot rely on a complete rulebook.
+
+4. Describe the difference between training and operation in machine
+   learning.
+
+5. A model sees thousands of labeled scans. What does it learn, and why
+   is it not simply memorizing every scan?
+
+6. Explain why human experts remain important when AI makes predictions.

@@ -1,7 +1,7 @@
 Imagine a student collecting information from several school documents,
 such as event notices or project instructions. Each document may organise
 details differently, so the old way would be to open each document one
-by one, find items like dates, names, locations, and costs and copy
+by one, find items like dates, names, locations, and costs, and copy
 everything into a table by hand. That takes time and makes copy-and-paste
 mistakes more likely.
 
@@ -13,38 +13,40 @@ With AI, the same task could become a simple workflow:
 • Check the table against the original documents for accuracy.
 
 This can reduce repetitive copying and leave more time for understanding
-the information. Use only documents for your school or family allows
+the information. Use only documents that your school or family allows
 you to upload, and never share private information without permission.
 
 This is just one example of how AI can help. The objective is to use
 AI to save time, increase productivity and protect privacy.
 
 When you think about AI, think about tasks that normally require human
-thinking, such as understanding speech, recognising a face, or choosing
+thinking, such as understanding speech, recognising a face or choosing
 a fast route.
 
 Artificial intelligence is technology that allows computers to perform
 tasks that normally require human intelligence.
 
 AI does not automatically replace every developer or guarantee perfect
-results; humans still define goals, check quality use it responsibly.
+results; humans still define goals, check quality, and use it responsibly.
 
-AI is already part of everyday life, even may seem new because of ChatGPT.
+AI is already part of everyday life, even though it may seem new because
+of ChatGPT.
 
 When it comes to Netflix recommendations, Netflix suggests movies and
 shows you may enjoy, helping you avoid scrolling through thousands of choices.
 These recommendations account for about 80% of Netflix viewing, demonstrating
 how useful AI can be for finding content quickly.
 
-Google Maps has arrival-time predictions. This estimates how long a trip
-will take and updates that estimate as conditions will change. This helps
-people plan when to leave and share a more realistic arrival time.
+Google Maps has arrival-time predictions. This estimates how long a trip will
+take and updates that estimate as conditions change. This helps people plan
+when to leave and share a more realistic arrival time.
 
 Billions of people rely on these predictions every day for commutes,
-appointments and travel. AI is not only a recent chatbot trendl it has
+appointments and travel. AI is not only a recent chatbot trend; it has
 been quietly helping people for years.
 
-1. What is artifical intelligence?
+1. What is artificial intelligence?
+
 a. Computer systems that perform tasks typically associated with human
    intelligence, such as learning, reasoning and decision-making
 
@@ -54,25 +56,157 @@ c. Robots that can move and interact with the physical world
 
 d. Any advanced computer program that processes large amounts of data
 
+
 2. Which of the following statements about AI is true?
+
 a. AI is a brand new technology that emerged in the last couple of years
 
 b. AI only exists in research labs and isn't used in everyday life yet
 
-c. AI has been around for many years but it hasn't been used in everyday life
-   yet
+c. AI has been around for many years but it hasn't been used in everyday
+   life yet
 
 d. AI has been around for many years and is already integrated into many
    systems we use daily 
 
 Correct answers:
-1. a. AI is a brand new technology that emerged in the last couple of years
+1. a. Computer systems that perform tasks typically associated with human
+      intelligence, such as learning, reasoning and decision-making
 2. d. AI has been around for many years and is already integrated into many
       systems we use daily 
 
 Before modern AI, engineers often created expert systems by programming
 explicit, step-by-step rules for each situation.
 
-A refrigerator is a example of this. A thermostat checks the temperature,
+A refrigerator is an example of this. A thermostat checks the temperature,
 turns the cooling on when it is too warm, and turns it off once the target
 temperature is reached.
+
+Engineers can write these rules precisely, such as if the temperature is
+above 4°C, turn the cooling on.
+
+The refrigerator works because temperature control is simple and predictable.
+Engineers can describe the needed behavior with a small set of precise rules.
+
+Let's connect this to Netflix recommendations.
+
+What rules do you think engineers could write to decide which movie or show
+each person will enjoy?
+
+Engineers might write rules such as recommending more movies from genres,
+actors, directors, or themes a person has enjoyed before.
+
+For example: if someone watches several science-fiction movies, recommend
+more science-fiction movies. That rule may help, but it cannot cover every
+person's changing and subjective preferences. Someone may enjoy science
+fiction one day, a documentary the next, or dislike a movie despite its
+genre.
+
+Simple rules can describe a few factors, but no fixed rule list can reliably
+predict everyone's taste.
+
+The same limitation appears in Google Maps arrival-time predictions. Engineers
+could write rules for ordinary traffic, weather, accidents or road construction,
+but countless combinations can occur. A fixed rule list cannot anticipate every
+situation or interaction between them.
+
+The key insight is that many important tasks are too complex for humans to
+describe as step-by-step instructions even when human experts can perform
+them well.
+
+So how did people solve this?
+
+Instead of programming every rule, machine learning lets computers learn
+procedures from examples. During training, the system receives many examples
+such as emails marked spam or legitimate. It studies those examples to find
+patterns that help it perform the task.
+
+For instance, with enough labeled emails, it may learn that certain phrases,
+senders, or formatting often appear in spam. Humans provide the examples and
+correct labels, while the system adjusts what it has learned from those examples.
+
+Train the AI System to Perform a Task
+Examples -> Machine Learning -> Trained AI System
+
+Once the system has learned patterns from many examples, it can receive a
+new case and compare it with those learned patterns to produce a result.
+
+For example, a spam filter examines a new email and checks whether its contents
+resemble patterns commonly found in spam.
+
+This is machine learning: the science of enabling computers to learn from data
+and use learned patterns on new cases.
+
+Let's see how this works with Netflix recommendations and Google Maps
+arrival-time predictions.
+
+Using the Trained AI System in the Real World
+New Case -> Training AI System -> Result
+
+For Netflix recommendations, during training, the system studies many users'
+viewing histories, ratings and completion rates. It learns patterns connecting
+people's preferences with features such as genres, actors and themes.
+
+During operation, it compares your viewing profile with those learned patterns
+and ranks titles you may enjoy. The system is not following one simple rule;
+it is recognising many patterns learned from examples.
+
+Now consider Google Maps arrival-time predictions. During training, the system
+studies billions of real trips and learns patterns involving travel times, traffic,
+weather, accidents and road conditions.
+
+During operation, it compares the current conditions along your route with those
+learned patterns and predicts your arrival time. Because conditions change, the
+prediction can update as new information appears.
+
+Machine learning works by recognising patterns learned during training and applying
+them to new cases. Netflix uses viewing patterns to recommend content, while Google
+Maps uses trip and traffic patterns to estimate arrival times.
+
+The broader takeaway is that a major part of modern AI involves recognising patterns
+in data and using those patterns to make predictions or decisions. This ability made
+it possible to solve tasks that were too complex for traditional rule-based programming.
+
+1. Why can't we just write rules to detect cancer in medical scans?
+
+a. Cancer is too rare to create rules for
+
+b. The rules would require too much computing power to execute
+
+c. The patterns that indicate cancer are too complex and subtle for humans to write
+   as explicit rules, even though radiologists can recognise them
+
+d. We don't know what cancer looks like in scans
+
+
+2. A hospital trains an AI system on thousands of medical scans labeled as normal
+   or showing cancer. During training, what is the system learning?
+
+a. The complete details of every scan in the training data
+
+b. Patterns in medical scans that indicate cancer likelihood
+
+c. A programmed checklist of cancer indicators that radiologists identified
+
+d. How to copy the decisions that radiologists made for previous scans
+
+Correct answers:
+1. c. The patterns that indicate cancer are too complex and subtle for
+      humans to write as explicit rules, even though radiologists can
+      recognise them
+2. b. Patterns in medical scans that indicate cancer likelihood
+
+Complex medical patterns are difficult to express as fixed rules, and machine
+learning learns patterns from labeled examples.
+
+Imagine trying to write rules for a lung scan:
+• If a spot is round, then call it cancer.
+• If it's larger than a certain size, call it cancer.
+• If it's near a certain area, then call it cancer.
+
+These rules would fail because a harmless spot can be round or large, while
+cancer can have many different shapes and sizes. This is what it means for
+something to be difficult to express as fixed rules.
+
+This is a concrete example of why some tasks cannot be handled well with a
+fixed checklist.
