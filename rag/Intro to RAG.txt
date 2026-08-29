@@ -1,0 +1,45 @@
+Retrieval-Augmented Generation
+
+Retrieval means to find or extract information in the conext of
+a computer.
+
+Augmented means the information that was retrieved is added to
+the prompt.
+
+Generation
+
+The AI generates an answer.
+
+Why do is RAG needed?
+
+An AI doesn't automatically know everything about your own documents.
+
+The AI model will be asked:
+What is John's favourite animal?
+
+The AI model may not know anything about John.
+
+The program will:
+1. Search animals.txt
+
+2. Find the revelant information:
+   John's favourite animal is a penguin.
+
+3. Give that information to the AI model.
+
+4. Ask the AI model to answer using that information.
+
+This is Retrieval-Augmented Generation.
+
+USER -> "What is John's favourite animal?" ->
+
+RETRIEVE Search the information ->
+
+"John's favourite animal is a penguin." ->
+
+AI GENERATES AN ANSWER ->
+
+"John's favourite animal is a penguin."
+
+The AI model is not searching the internet here. The program retrieves
+information and gives it to the AI.

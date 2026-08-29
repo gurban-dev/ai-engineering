@@ -4,7 +4,7 @@ in one or two sentences per item.
 1. Define artificial intelligence in your own words.
 
 2. Give one everyday AI example other than Netflix or Google Maps,
-   and describe its benefit.
+   and describe how AI benefit the example.
 
 3. Explain why a refrigerator can use fixed rules, but movie
    recommendations cannot rely on a complete rulebook.

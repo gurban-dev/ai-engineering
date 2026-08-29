@@ -11,9 +11,10 @@ reasoning in one or two sentences per item.
 2. Give one everyday AI example other than Netflix or Google Maps,
    and describe its benefit.
 
-   Spam detection is an everyday AI example. It identifies unwanted
-   or dangerous emails and moves them out of the inbox, helping
-   protect people from clutter and phishing attempts.
+   Spam detection is an everyday example of AI. It benefits users
+   by identifying unwanted or dangerous emails and moving them out
+   of the inbox. This helps reduce clutter and protects people from
+   phishing attempts and other harmful messages.
 
 3. Explain why a refrigerator can use fixed rules, but movie
    recommendations cannot rely on a complete rulebook.
