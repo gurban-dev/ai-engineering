@@ -14,6 +14,29 @@ import re
 # The tokenizer sits between the raw text and the neural network.
 
 # Pipeline:
+# Raw text
+#    ↓
+# tokenize()
+#    ↓
+# ["Hello", ",", "Python", "!"]
+#    ↓
+# build_vocabulary()
+#    ↓
+# {
+#     "Hello": 0,
+#     ",": 1,
+#     "Python": 2,
+#     "!": 3,
+#     ...
+# }
+#    ↓
+# encode()
+#    ↓
+# [0, 1, 2, 3]
+#    ↓
+# decode()
+#    ↓
+# ["Hello", ",", "Python", "!"]
 
 
 # Notice how there are at least two empty lines above the class
@@ -54,8 +77,26 @@ class Tokenizer:
         # What token does this number represent?
         self.id_to_token = {}
 
+    def tokenize(self, text):
+        tokenized_lines = list()
+
+        for line in text:
+            # Regular expressions are patterns that describe text we want to find.
+            # \w+ finds one or more word characters, such as letters or numbers.
+            # [^\w\s] finds one character that is not a word character or whitespace.
+            # The | means "or", so we find either a word or punctuation character.
+            tokens = re.findall(r"\w+|[^\w\s]", line)
+
+            tokenized_lines.append(tokens)
+
+        return tokenized_lines
+
 raw_text = [
     "Hello, world!",
     "Hello Python.",
     "Python is great!"
 ]
+
+tokenizer = Tokenizer()
+
+tokenizer.tokenize(text=raw_text)
