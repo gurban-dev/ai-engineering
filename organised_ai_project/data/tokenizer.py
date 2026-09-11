@@ -1,3 +1,9 @@
+import re
+
+# The purpose of a tokenizer:
+# Break text into smaller pieces called tokens so that the AI
+# model can process the text.
+
 # The tokenizer will:
 # 1. Take the raw text.
 # 2. Split the text into words and punctuation.
@@ -5,7 +11,9 @@
 # 4. Convert tokens into integer IDs.
 # 5. Convert IDs back into tokens.
 
-import re
+# The tokenizer sits between the raw text and the neural network.
+
+# Pipeline:
 
 
 # Notice how there are at least two empty lines above the class
@@ -46,4 +54,8 @@ class Tokenizer:
         # What token does this number represent?
         self.id_to_token = {}
 
-    
+raw_text = [
+    "Hello, world!",
+    "Hello Python.",
+    "Python is great!"
+]
