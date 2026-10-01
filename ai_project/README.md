@@ -11,5 +11,5 @@ tests/ is the practice exam.
 
 notes/ is your personal notebook.
 
-This project uses the Mozilla Common Voice dataset which is
+This project uses the Mozilla Common Voice English dataset which is
 a speech-based dataset with text transcripts.
