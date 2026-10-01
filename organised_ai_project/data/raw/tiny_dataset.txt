@@ -1,4 +1,0 @@
-The cat sat.
-The cat ate.
-The dog sat.
-The dog ate.
