@@ -1,4 +1,6 @@
 .venv/
+**/.voice-ai-venv/
+
 .env
 **/.env
 .ipynb_checkpoints/
