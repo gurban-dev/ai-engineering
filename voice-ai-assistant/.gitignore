@@ -1,0 +1,27 @@
+# Virtual Environments
+.voice-ai-venv/
+.venv/
+venv/
+
+# Environment Variables & API Secrets (OpenAI, ElevenLabs, etc.)
+.env
+.env.*
+*.secrets
+*.key
+
+# Python Caches & Byte-code
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Project Data & Audio Media (Prevents committing raw recordings)
+data/*
+!data/.gitkeep
+
+# IDEs & System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
