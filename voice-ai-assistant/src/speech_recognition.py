@@ -80,7 +80,7 @@ def main():
     # ./ means the current directory.
     # ../ means go up one directory level.
     # audio/ means go into the audio directory.
-    audio, sample_rate = load_audio("./../audio/file_example_WAV_2MG.wav")
+    audio, sample_rate = load_audio("./../audio/beethoven_für_elise.mp3")
 
     audio_duration = round(len(audio) / sample_rate, 2)
 
