@@ -1,0 +1,18 @@
+[
+    {
+        "input": "Hello",
+        "response": "Hello! How can I help you?"
+    },
+    {
+        "input": "How are you?",
+        "response": "I'm doing well, thank you!"
+    },
+    {
+        "input": "What is your name?",
+        "response": "I'm a voice assistant."
+    },
+    {
+        "input": "Goodbye",
+        "response": "Goodbye! Have a great day!"
+    }
+]

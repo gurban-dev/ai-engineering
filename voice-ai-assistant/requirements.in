@@ -1,0 +1,10 @@
+cffi==2.1.1
+numpy==2.5.4
+pycparser==3.11
+soundfile==0.14.0
+typing_extensions==4.16.0
+
+--extra-index-url https://pytorch.org
+
+torch==2.15.0
+pip-tools
