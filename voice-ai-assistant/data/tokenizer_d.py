@@ -187,11 +187,11 @@ class Tokenizer:
 # The code in the if block will execute only if this file is
 # not being imported.
 if __name__ == "__main__":
-    input_ = str(input("\nEnter a string to tokenize: "))
+    usr_input = str(input("\nEnter a string to tokenize: "))
 
     raw_text = [
         # Added for demonstration
-        input_
+        usr_input
     ]
 
     tokenizer = Tokenizer()
