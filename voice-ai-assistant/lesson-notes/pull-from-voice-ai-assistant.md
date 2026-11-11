@@ -1,105 +1,79 @@
-# Synchronising voice-ai-assistant with the Upstream Repository
+# Cloning the `voice-ai-assistant` Subdirectory
 
-This guide explains how to retrieve the latest changes from the `voice-ai-assistant` subdirectory in the upstream GitHub repository while preserving your own local work.
+This guide explains how to retrieve only the `voice-ai-assistant` subdirectory from the upstream GitHub repository using Git sparse checkout.
 
-**Upstream repository:**  
-[https://github.com/gurban-dev/ai-engineering](https://github.com/gurban-dev/ai-engineering)
+**Upstream repository:** https://github.com/gurban-dev/ai-engineering
 
-Before synchronising: Make sure all your local changes are committed and your working tree is clean. Run the following command to check:
+## 1. Initial Clone
 
-```powershell
-git status
-```
-
-If Git reports nothing to commit, working tree clean, you are ready to proceed.
-
-If Git reports modified, deleted, or untracked files, you have local changes that have not been committed.
-
-To save these changes in your local repository, run:
+### 1. Initialise the Git repository
 
 ```powershell
-git add -A
-git commit -m "commit-message-describing-your-changes"
+git init
 ```
 
-## 1. Initial Synchronisation
+Creates a new, empty Git repository in the current directory.
 
-### Step 1. Fetch upstream changes
+### 2. Add the upstream repository as a remote
 
 ```powershell
-# Download the latest commits from the upstream main branch.
-git fetch second-remote main
+git remote add origin https://github.com/gurban-dev/ai-engineering.git
 ```
 
-### Step 2. Extract the voice-ai-assistant subdirectory
+Connects your local repository to the upstream GitHub repository and names the remote `origin`.
+
+### 3. Enable sparse checkout
 
 ```powershell
-# Extract the subdirectory's Git history into a separate branch.
-git subtree split --prefix=voice-ai-assistant second-remote/main -b upstream-voice-ai-assistant
+git config core.sparseCheckout true
 ```
 
-### Step 3. Merge upstream changes
+Enables sparse checkout, allowing Git to check out only specified parts of the repository.
+
+### 4. Specify the subdirectory to check out
 
 ```powershell
-# Merge the extracted project into your local repository.
-# Allow unrelated histories because the repositories were created independently.
-git merge upstream-voice-ai-assistant --allow-unrelated-histories
+git sparse-checkout set voice-ai-assistant
 ```
 
-If Git reports merge conflicts, open the affected files in VS Code, compare both versions and resolve the conflicts manually.
+Tells Git to check out only the contents of the `voice-ai-assistant` subdirectory.
 
-After resolving them:
+### 5. Fetch the upstream repository
 
 ```powershell
-# Stage all resolved changes.
-git add -A
-
-# Complete the merge.
-git commit -m "Merge upstream voice-ai-assistant updates"
+git fetch --depth=1 origin main
 ```
+
+Downloads the latest commit from the upstream `main` branch without downloading the complete commit history.
+
+### 6. Check out the main branch
+
+```powershell
+git checkout main
+```
+
+Creates and switches to your local `main` branch, checking out the files specified by sparse checkout.
 
 ---
 
-## 2. Synchronising Future Updates
+# Synchronising `voice-ai-assistant` with the Upstream Repository
 
-After completing the initial synchronisation, you no longer need `--allow-unrelated-histories` because the Git histories have been connected.
+After completing the initial clone, run the following commands whenever you want to retrieve the latest changes from GitHub.
 
-Whenever new upstream changes are available, run:
-
-### Step 1. Fetch upstream changes
+### 1. Fetch upstream changes
 
 ```powershell
-# Download the latest upstream commits.
-git fetch second-remote main
+git fetch origin main
 ```
 
-### Step 2. Delete the previous extraction branch
+Downloads the latest commits from the upstream `main` branch without automatically modifying your local files.
+
+### 2. Overwrite local files with upstream changes
 
 ```powershell
-# Remove the previous temporary extraction branch.
-git branch -D upstream-voice-ai-assistant
+git reset --hard origin/main
 ```
 
-### Step 3. Extract the updated subdirectory
+Resets your local `main` branch to match the latest upstream `main` branch, replacing locally tracked files with their upstream versions.
 
-```powershell
-# Create a new branch containing the latest upstream subdirectory.
-git subtree split --prefix=voice-ai-assistant second-remote/main -b upstream-voice-ai-assistant
-```
-
-### Step 4. Merge the updates
-
-```powershell
-# Merge the latest upstream changes into your local project.
-git merge upstream-voice-ai-assistant
-```
-
-If conflicts occur, resolve them in VS Code, then run:
-
-```powershell
-# Stage all resolved changes.
-git add -A
-
-# Complete the merge.
-git commit -m "Update voice-ai-assistant from upstream"
-```
+No local changes need to be preserved because the cloned directory is not used for independent development.
