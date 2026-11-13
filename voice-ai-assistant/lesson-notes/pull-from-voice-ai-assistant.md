@@ -1,64 +1,50 @@
-# Cloning the `voice-ai-assistant` Subdirectory
+# Clone the `voice-ai-assistant` Subdirectory
 
-This guide explains how to retrieve only the `voice-ai-assistant` subdirectory from the upstream GitHub repository using Git sparse checkout.
+Run these commands in PowerShell.
 
-**Upstream repository:** https://github.com/gurban-dev/ai-engineering
-
-## 1. Initial Clone
-
-### 1. Initialise the Git repository
+## 1. Initialize Git in voice-ai-assistant-d
 
 ```powershell
 git init
 ```
 
-Creates a new, empty Git repository in the current directory.
-
-### 2. Add the upstream repository as a remote
+## 4. Add the upstream repository
 
 ```powershell
 git remote add origin https://github.com/gurban-dev/ai-engineering.git
 ```
 
-Connects your local repository to the upstream GitHub repository and names the remote `origin`.
-
-### 3. Enable sparse checkout
+## 5. Enable sparse checkout
 
 ```powershell
 git config core.sparseCheckout true
 ```
 
-Enables sparse checkout, allowing Git to check out only specified parts of the repository.
-
-### 4. Specify the subdirectory to check out
+## 6. Select the subdirectory
 
 ```powershell
 git sparse-checkout set voice-ai-assistant
 ```
 
-Tells Git to check out only the contents of the `voice-ai-assistant` subdirectory.
+Includes the entire directory and all nested files and directories.
 
-### 5. Fetch the upstream repository
+## 7. Fetch the upstream repository
 
 ```powershell
 git fetch --depth=1 origin main
 ```
 
-Downloads the latest commit from the upstream `main` branch without downloading the complete commit history.
+Downloads the latest commit without the complete Git history.
 
-### 6. Check out the main branch
+## 8. Check out the main branch
 
 ```powershell
-git checkout main
+git checkout -b main --track origin/main
 ```
 
-Creates and switches to your local `main` branch, checking out the files specified by sparse checkout.
+## Synchronizing with Upstream (After the Initial Pull)
 
----
-
-# Synchronising `voice-ai-assistant` with the Upstream Repository
-
-After completing the initial clone, run the following commands whenever you want to retrieve the latest changes from GitHub.
+Whenever you want to retrieve the latest changes from GitHub, run the following commands from the repository root.
 
 ### 1. Fetch upstream changes
 
@@ -66,14 +52,14 @@ After completing the initial clone, run the following commands whenever you want
 git fetch origin main
 ```
 
-Downloads the latest commits from the upstream `main` branch without automatically modifying your local files.
+Downloads the latest commits from the upstream `main` branch without modifying local files.
 
-### 2. Overwrite local files with upstream changes
+### 2. Update local files
 
 ```powershell
 git reset --hard origin/main
 ```
 
-Resets your local `main` branch to match the latest upstream `main` branch, replacing locally tracked files with their upstream versions.
+Updates the local branch and working files to match the latest upstream `main` branch.
 
-No local changes need to be preserved because the cloned directory is not used for independent development.
+**Note:** This discards local changes to tracked files.
