@@ -54,6 +54,8 @@ with open("data/conversations.json", "r", encoding="utf-8") as file_obj:
     # objects.
     conversation_data = json.load(file_obj)
 
+    print("conversation_data:", conversation_data)
+
 
 class Encoder:
     pass
