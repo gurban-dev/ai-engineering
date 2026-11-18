@@ -118,6 +118,8 @@ class Tokenizer:
                 # This is for punctuation and other non-word characters.
                 final_tokens.append(token)
 
+        return final_tokens
+
     def fit(self, texts):
 
         # Go through each text in the training dataset.

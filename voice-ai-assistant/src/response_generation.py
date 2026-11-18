@@ -56,9 +56,43 @@ with open("data/conversations.json", "r", encoding="utf-8") as file_obj:
 
     print("conversation_data:", conversation_data)
 
+# Encoder reads the user's sentence.
+# Suppose the tokenizer converts:
+# Hello how are you
 
-class Encoder:
-    pass
+# into:
+# [12, 8, 25, 41]
+class Encoder(nn.Module):
+    # vocab_size is the total number of unique tokens in the
+    # vocabulary.
+
+    # embedding_dim gets its name from representing the dimensions
+    # of an embedding vector.
+
+    # An embedding is a numerical representation of something.
+    # E.g. A word or token.
+
+    # The word Hello becomes the integer 4.
+
+    # The dimension describes the number of values needed to
+    # represent a point.
+    # 1 dimension: [0.5]
+    # 2 dimensions: [0.5, 0.8]
+    # 128 dimensions: A vector containing 128 numerical values.
+
+    # hidden_dim is the number of values maintained in the LSTM's
+    # hidden state.
+
+    # LSTM stands for Long Short-Term Memory and this is a type
+    # of Recurrent Neural Network (RNN) designed to process
+    # sequential data while preserving information from earlier
+    # parts of the sequence.
+
+    # The LSTM's hidden state is a collection of numerical values
+    # that represents information the LSTM has remembered from the
+    # sequence it has processed.
+    def __init__(self, vocab_size, embedding_dim, hidden_dim):
+        pass
 
 
 class Decoder:
