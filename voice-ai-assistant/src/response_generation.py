@@ -62,6 +62,15 @@ with open("data/conversations.json", "r", encoding="utf-8") as file_obj:
 
 # into:
 # [12, 8, 25, 41]
+
+# nn.Module is the parent clas.
+# Encoder is the child class.
+
+# This is a parent-child hierarchy where the child class,
+# Encoder, inherits functionality from its parent, nn.Module.
+
+# nn.Module this provides functionality that allows PyTorch to
+# keep track of neural network layers.
 class Encoder(nn.Module):
     # vocab_size is the total number of unique tokens in the
     # vocabulary.
@@ -70,9 +79,9 @@ class Encoder(nn.Module):
     # of an embedding vector.
 
     # An embedding is a numerical representation of something.
-    # E.g. A word or token.
+    # E.g. A a numerical representation of a word or token.
 
-    # The word Hello becomes the integer 4.
+    # The word "Hello" becomes the integer 4.
 
     # The dimension describes the number of values needed to
     # represent a point.
@@ -92,7 +101,9 @@ class Encoder(nn.Module):
     # that represents information the LSTM has remembered from the
     # sequence it has processed.
     def __init__(self, vocab_size, embedding_dim, hidden_dim):
-        pass
+        # Invokes the constructor method that was defined in the
+        # parent class.
+        super().__init__()
 
 
 class Decoder:
